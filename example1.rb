@@ -27,8 +27,6 @@ class Crawler
   end
 end
 
-# MRI下运行结果均为10
-# Jruby下会出现9
 100.times do
   crawler = Crawler.new(['http://www.baidu.com']*10)
   crawler.request_all
